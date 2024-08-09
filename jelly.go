@@ -17,14 +17,6 @@ import (
 
 	Jelly files are basic, currently only support variable and addition
 
-	e,g,
-
-	@greeting = "Hello"
-	@name = "Jelly"
-
-	@full_greeting = @greeting ", " @name "!"
-
-	Where full_greeting = "Hello, Jelly!"
 
 	I opted to have any vars or strings on the same line to just append
 	No need to have a + operator as its implied
@@ -249,27 +241,3 @@ func (store *Store) Get(key string) string {
 
 	return processedItems
 }
-
-
-/*
-
-Example usage:
-
--- data.jelly
-
-greeting = "Hello"
-name = "Jelly"
-
-full_greeting = @greeting ", " @name "!"
-
--- main.go
-
-func main() {
-	store := NewStore("data.jelly")
-
-	fmt.Println("Store:", store)
-
-	fg := store.Get("full_greeting")
-	fmt.Println("Full greeting:", fg)
-}
-*/
