@@ -1,3 +1,3 @@
-module github.com/erawood/jelly
+module jelly
 
 go 1.21.1
