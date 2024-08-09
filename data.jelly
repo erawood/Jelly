@@ -1,0 +1,4 @@
+greeting = "Hello"
+name = "Jelly"
+
+full_greeting = @greeting ", " @name "!"
